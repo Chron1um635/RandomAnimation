@@ -19,49 +19,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqg-Is-Vvl" customClass="SpringView" customModule="SpringAnimation">
                                 <rect key="frame" x="46.666666666666657" y="99" width="300" height="140"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Z0z-yH-n0f">
-                                        <rect key="frame" x="8" y="8.0000000000000071" width="284" height="125.66666666666669"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zM-Ro-c2f">
-                                                <rect key="frame" x="0.0" y="0.0" width="284" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9V-iE-KL1">
-                                                <rect key="frame" x="0.0" y="26.333333333333343" width="284" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy7-lf-17h">
-                                                <rect key="frame" x="0.0" y="52.666666666666657" width="284" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N20-YJ-HO5">
-                                                <rect key="frame" x="0.0" y="79" width="284" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9T6-hR-EJi">
-                                                <rect key="frame" x="0.0" y="105.33333333333334" width="284" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zM-Ro-c2f">
+                                        <rect key="frame" x="8" y="7.9999999999999982" width="284" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstItem="Z0z-yH-n0f" firstAttribute="leading" secondItem="yqg-Is-Vvl" secondAttribute="leading" constant="8" id="0SG-ED-d9Z"/>
-                                    <constraint firstAttribute="trailing" secondItem="Z0z-yH-n0f" secondAttribute="trailing" constant="8" id="64k-P2-cfU"/>
                                     <constraint firstAttribute="height" constant="140" id="ELq-Sy-Rnn"/>
                                     <constraint firstAttribute="width" constant="300" id="Fl0-pc-m7E"/>
-                                    <constraint firstItem="Z0z-yH-n0f" firstAttribute="top" secondItem="yqg-Is-Vvl" secondAttribute="top" constant="8" id="dyC-vW-ls0"/>
+                                    <constraint firstAttribute="trailing" secondItem="6zM-Ro-c2f" secondAttribute="trailing" constant="8" id="bAx-M7-ce0"/>
+                                    <constraint firstItem="6zM-Ro-c2f" firstAttribute="leading" secondItem="yqg-Is-Vvl" secondAttribute="leading" constant="8" id="fQO-b3-krM"/>
+                                    <constraint firstItem="6zM-Ro-c2f" firstAttribute="top" secondItem="yqg-Is-Vvl" secondAttribute="top" constant="8" id="nJp-AR-vyr"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yet-xq-fBT">
@@ -87,11 +58,7 @@
                     </view>
                     <connections>
                         <outlet property="animatedView" destination="yqg-Is-Vvl" id="xUm-hK-S3S"/>
-                        <outlet property="curveLabel" destination="j9V-iE-KL1" id="tth-21-khW"/>
-                        <outlet property="delayLabel" destination="9T6-hR-EJi" id="ojx-3E-kd9"/>
-                        <outlet property="durationLabel" destination="N20-YJ-HO5" id="XRW-fL-odW"/>
-                        <outlet property="forceLabel" destination="hy7-lf-17h" id="xlO-4c-2xF"/>
-                        <outlet property="presetLabel" destination="6zM-Ro-c2f" id="2I9-JU-pe1"/>
+                        <outlet property="descriptionLabel" destination="6zM-Ro-c2f" id="2I9-JU-pe1"/>
                         <outlet property="runAnimationButton" destination="Yet-xq-fBT" id="2DN-zd-FrL"/>
                     </connections>
                 </viewController>
