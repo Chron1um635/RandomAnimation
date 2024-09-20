@@ -12,22 +12,25 @@ struct Animation {
     let duration: Double
     let delay: Double
     
-    static func getAnimations() -> [Animation] {
+    var description: String {
+        """
+        Preset: \(preset)
+        Curve: \(curve)
+        Force: \(String(format: "%.2f", force))
+        Duration: \(String(format: "%.2f", duration))
+        Delay: \(String(format: "%.2f", delay))
+        """
+    }
+    
+    static func getAnimation() -> Animation {
         let data = DataStore.shared
-        var animations: [Animation] = []
-        
-        for _ in 0...100 {
-            animations.append(
-                Animation(
-                    preset: data.animations[Int.random(in: 0..<data.animations.count)],
-                    curve: data.curves[Int.random(in: 0..<data.curves.count)],
-                    force: Double.random(in: 1...1.5),
-                    duration: Double.random(in: 0.5...5),
-                    delay: Double.random(in: 0...1)
-                )
-            )
-        }
-        
+        let animations = Animation(
+            preset: data.animations.randomElement() ?? "",
+            curve: data.curves.randomElement() ?? "",
+            force: Double.random(in: 1...1.5),
+            duration: Double.random(in: 0.5...1.5),
+            delay: Double.random(in: 0...0.5)
+        )
         return animations
     }
 }
